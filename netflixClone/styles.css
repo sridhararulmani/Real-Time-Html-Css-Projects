@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+}
+.main1 {
+  background-image: linear-gradient(
+      57deg,
+      rgba(0, 0, 0, 0.9) 20%,
+      rgba(0, 0, 0, 0.8965) 25.92%,
+      rgba(0, 0, 0, 0.8861) 31.83%,
+      rgba(0, 0, 0, 0.8688) 37.75%,
+      rgba(0, 0, 0, 0.8444) 43.67%,
+      rgba(0, 0, 0, 0.8132) 49.58%,
+      rgba(0, 0, 0, 0.775) 55.5%,
+      rgba(0, 0, 0, 0.7368) 61.42%,
+      rgba(0, 0, 0, 0.7056) 67.33%,
+      rgba(0, 0, 0, 0.6813) 73.25%,
+      rgba(0, 0, 0, 0.6639) 79.17%,
+      rgba(0, 0, 0, 0.6535) 85.08%,
+      rgba(0, 0, 0, 0.65) 91%
+    ),
+    url(/images/IN-en-20231127-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150%;
+  scroll-behavior: smooth;
+}
+.main1 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav img {
+  width: 210px;
+  height: 125px;
+}
+.nav .buttons {
+  height: 100px;
+  width: 200px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.buttons #language {
+  height: 35px;
+  width: 115px;
+  border: 1px solid white;
+}
+.buttons #signin {
+  height: 35px;
+  width: 70px;
+  background-color: red;
+  font-weight: 400;
+}
+#language #language_select {
+  border: none;
+  background: none;
+  color: white;
+  font-size: medium;
+  font-weight: 400;
+}
+.main1 .contents {
+  color: white;
+  margin: 100px;
+}
+.contents h1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+.contents p {
+  color: grey;
+}
+.inputTags #email_id {
+  height: 50px;
+  width: 380px;
+  background-color: rgba(114, 114, 114, 0.446);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgb(0, 255, 170);
+}
+.inputTags{
+  display: flex;
+  gap: 10px;
+}
+.inputTags a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.inputTags #getstart {
+  height: 50px;
+  width: 250px;
+  gap: 20px;
+  font-size: 20px;
+  background-color: red;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
