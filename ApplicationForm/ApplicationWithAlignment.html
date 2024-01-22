@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Form 1</title>
+  </head>
+  <style>
+    body {
+      background-color: rgba(178, 58, 162, 0.892);
+    }
+    legend {
+      font-size: 50px;
+      color: white;
+    }
+    form {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    table {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    fieldset {
+      width: 450px;
+      height: 520px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(204, 236, 255);
+    }
+    #btng{
+        background-color: green;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    #btnr{
+        background-color: red;
+        color: white;
+        padding: 10px 15px;   
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    label{
+        font-size: 15px;
+        font-weight: bold;
+    }
+  </style>
+  <body>
+    <form>
+      <fieldset>
+        <legend><b>Google Form</b></legend>
+        <table rules="" cellspacing="5" cellpadding="5">
+          <tr>
+            <td><label for="">FirstName</label></td>
+            <td><input type="text" name="" id="" autofocus required/></td>
+          </tr>
+          <tr>
+            <td><label for="">SecondName</label></td>
+            <td><input type="text" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <label for="">Male</label
+              ><input type="radio" name="Gender" id="male" value="male" />
+              <label for="">Female</label
+              ><input type="radio" name="Gender" id="female" value="female" />
+              <label for="">Others</label
+              ><input type="radio" name="Gender" id="others" value="others" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Contact Number</label></td>
+            <td>
+              <input type="tel" name="contactNumber" id="contact_number" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email Id</label></td>
+            <td><input type="email" name="email" id="e-mail" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Address</label></td>
+            <td>
+              <textarea
+                name=""
+                id=""
+                cols="20"
+                rows="3"
+                style="resize: none"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile Number</label></td>
+            <td><input type="tel" name="mobileNUmber" id="mobile_number" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Date of Birth</label></td>
+            <td>
+              <input
+                type="date"
+                name="dateOfBirth"
+                id="date_of_birth"
+                style="width: 165px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Skills</label></td>
+            <td>
+              <label for="">Java</label
+              ><input type="radio" name="Skills" id="skills" />
+              <label for="">Sql</label
+              ><input type="radio" name="Skills" id="skills" />
+              <label for="">Web</label
+              ><input type="radio" name="Skills" id="skills" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Resume Uplode</label></td>
+            <td><input type="file" name="Resume" id="resume_uplode" /></td>
+          </tr>
+          <tr>
+            <td><button type="submit" id="btng">submit</button></td>
+            <td><input type="reset" value="Back"></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

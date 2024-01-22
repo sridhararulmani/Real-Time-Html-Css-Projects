@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application From</title>
+  </head>
+  <!-- ? autocomplete, autofocus,requires,readonly -->
+  <!-- & autocomplete: on/offf==> gives the previousy entered data as suggestion. The default value is on. It is off Previously entered data will not be given as a suggestion(The result also depends upon browser settings.) Can be declared in booth form and input -->
+  <!-- ~ autofocus: automatically focuses the input feild when the browserr loads -->
+  <!-- & required: specifies that the field should be filled before submitting the form -->
+  <!-- ~ readonly: specifies that user can only read the data not to change the data given in value attributes. -->
+  <!-- & placeholder: gives the fainted text , where it can be used to sepcify the used what data that user should enter -->
+  <!-- ~ maxlength : the length of the data can be specified. The input will not accept  -->
+  <!-- & minlength : the minimum length of the data can be specified. The then the minlength but it accepts the data more then minlength -->
+  <!-- & pattern : Pattren attribute is used to declared of the pattern(sequence of data ) that is acceptable by the particular input feild -->
+  <!-- ~ max and min : the max and min attribute can be used in type number and date> In type=number those attributes are used to specify month. The data format is YYYY-MM-DD -->
+  <!-- & step :  specification the step of number to be increased in typnumber-->
+  <!-- & disable : disable the input field, where user canot fill the data. -->
+  <!-- ~ checked : the input : ratio and checkbox : will automatically selected when the browser loads. -->
+  <!-- & novalidation : it doesn't validate the form. declared in the form tag-->
+  <body>
+    <form autocomplete="on" >
+      <fieldset style="width: 60%; border-radius: 5px">
+        <legend>Application Form</legend>
+        <br />
+        <label for="FirstName">First Name</label>
+        <input
+          type="text"
+          id="FirstName"
+          name="first_name"
+          placeholder="First Name [A-Z a-z]"
+          pattern="[A-Z a-z]{10}"
+          autofocus
+          required
+        />
+        <br /><br />
+        <label for="SecondName">Second Name</label>
+          <input type="text" name="SecondName" id="SecondName"  placeholder="Second Name [a-z A-z]" required/>
+        <br /><br />
+        <label for="">Gender</label>&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Gender" value="male" id="male" for="" required/>
+        <label for="">Male</label>&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Gender" value="female" id="female" for="" required/>
+        <label for="">Female</label>&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Gender" value="others" id="others" for="" required/>
+        <label for="">Others</label>&nbsp;&nbsp;&nbsp;
+        <br /><br />
+        <label for="" >DOB</label>
+        <input type="date" name="" id="" max="2023-11-22" min="2023-10-22" required/>
+        <br /><br />
+        <label for="">Age</label>
+        <input type="number" name="" id="" max="28" min="18" step="1" required><br><br>
+        <label for="">Contact Number</label>
+        <input type="tel" name="" id="" pattern="[0-9]{10}" placeholder="Mobile Number [0-9]{10}" required/>
+        <br /><br />
+        <label for="">Email</label>
+        <input type="email" name="" id=""  placeholder="email [0-9 a-z]" required/>
+        <br /><br />
+        <label for="">Password</label>
+        <input type="password" name="" id="" placeholder="Password" required/>
+        <br /><br />
+        <label for="">Address</label>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="3"
+          style="resize: none"
+          placeholder="Address [0-9 A-Z a-z]"
+          pattern="[0-9 A-Z a-z]"
+          required
+          ></textarea>
+        <br /><br />
+      </select>
+      <label for="contry">Contry</label>
+      <select name="contry" id="contry" required>
+        <optgroup label="india" >
+          <option value="India">India</option>
+        </optgroup>
+      </select>&nbsp;&nbsp;&nbsp;
+      </select>
+      <label for="state" >State</label>
+      <select name="state" id="state" required>
+        <optgroup label="state" >
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Karnataka">Karnataka</option>
+        </optgroup>
+      </select>&nbsp;&nbsp;&nbsp;
+        <label for="distric">Distric</label>
+        <select name="distric" id="distric" required>
+          <optgroup label="Tamil Nadu" >
+            <option value="Chennai">Chennai</option>
+            <option value="Salem">Salem</option>
+            <option value="Kovai">Kovai</option>
+          </optgroup>
+          <optgroup label="Karnataka">
+            <option value="Bangloure">Bangloure</option>
+            <option value="Mysore">Mysore</option>
+            <option value="Shumuga">Shumuga</option>
+          </optgroup>
+        </select>&nbsp;&nbsp;&nbsp;
+      <label for="">PIN-Code</label>
+      <input type="tel" name="" id="" pattern="[0-9]{6}" placeholder="000 000">
+        <br /><br />
+        <label for="">Skills</label>&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Skill" value="java" id="java" /><label
+          for="java"
+          >Java</label
+        >&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Skill" value="sql" id="sql" /><label
+          for="sql"
+          >SQl</label
+        >&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="Skill" value="web" id="web" /><label
+          for="web"
+          >WEB</label
+        >&nbsp;&nbsp;&nbsp;
+        <br /><br />
+        <input type="checkbox" name="i agree" value="I agree with All terms" id="i_agree" checked>
+        <lable>I agree with All terms</lable>&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="not agree" value="I m not agree with All terms" id="im_not_agree">
+        <lable>I am not agree</lable>&nbsp;&nbsp;&nbsp;<br><br>
+        <label for="">Resume</label>
+        <input type="file" name="" id="" /><br /><br />
+        <input type="submit" value="Done"/>
+        <input type="reset" value="Back"/>
+        <button disabled>Next</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
